@@ -1,0 +1,31 @@
+# Render Blueprint: deploys the backend API + a free PostgreSQL database.
+# In the Render dashboard: New > Blueprint > connect this repo.
+# The frontend is deployed separately on Vercel/Netlify (see README).
+
+databases:
+  - name: ioms-db
+    databaseName: inventory
+    plan: free
+
+services:
+  - type: web
+    name: ioms-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health
+    envVars:
+      # Render injects the connection string from the database above.
+      # We convert the default postgres:// scheme to SQLAlchemy's
+      # postgresql+psycopg2:// at runtime via DATABASE_URL below.
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ioms-db
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: LOW_STOCK_THRESHOLD
+        value: "10"
+      - key: SEED_DATA
+        value: "true"
