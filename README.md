@@ -10,9 +10,9 @@ A production-ready, fully containerized full-stack application for managing **pr
 
 | Deliverable | Link |
 | --- | --- |
-| **Live Frontend** | _add your Vercel/Netlify URL here_ |
-| **Live Backend API** | _add your Render/Railway URL here_ |
-| **API Docs (Swagger)** | `<backend-url>/docs` |
+| **Live Frontend** | https://assignment-ethara-ai-tau.vercel.app |
+| **Live Backend API** | https://ioms-backend-iyns.onrender.com |
+| **API Docs (Swagger)** | https://ioms-backend-iyns.onrender.com/docs |
 | **GitHub Repository** | https://github.com/Sanchit1079/Assignment-Ethara.AI |
 | **Docker Hub (backend image)** | _add your image link here_ |
 
