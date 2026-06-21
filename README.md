@@ -13,7 +13,7 @@ A production-ready, fully containerized full-stack application for managing **pr
 | **Live Frontend** | _add your Vercel/Netlify URL here_ |
 | **Live Backend API** | _add your Render/Railway URL here_ |
 | **API Docs (Swagger)** | `<backend-url>/docs` |
-| **GitHub Repository** | _add your repo URL here_ |
+| **GitHub Repository** | https://github.com/Sanchit1079/Assignment-Ethara.AI |
 | **Docker Hub (backend image)** | _add your image link here_ |
 
 ---
