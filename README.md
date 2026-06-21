@@ -14,7 +14,7 @@ A production-ready, fully containerized full-stack application for managing **pr
 | **Live Backend API** | https://ioms-backend-iyns.onrender.com |
 | **API Docs (Swagger)** | https://ioms-backend-iyns.onrender.com/docs |
 | **GitHub Repository** | https://github.com/Sanchit1079/Assignment-Ethara.AI |
-| **Docker Hub (backend image)** | _add your image link here_ |
+| **Docker Hub (backend image)** | https://hub.docker.com/r/sanchiitt/ioms-backend |
 
 ---
 
